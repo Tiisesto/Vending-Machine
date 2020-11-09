@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending Machine Web App</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootswatch.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" id="headerRow">
+                <h1 class="col-md-12">
+                    <button type="button" class="btn btn-outline-success" onClick="loadData()">
+                        <i class="glyphicon glyphicon-refresh"></i>
+                    </button>
+                    Vending Machine
+                </h1>
+            </div>
+            <hr>
+            <div class="row" id="outer-container">
+                <div class="col-md-7" id="product-container">
+                    <h3>
+                        <button type="button" class="btn btn-outline-success" onClick="getProducts()">
+                            <i class="glyphicon glyphicon-refresh"></i>
+                        </button>
+                        Products
+                    </h3>
+                    <div class="spinner-border" role="status" id="products-spinner">
+                        <span class="sr-only"></span>
+                    </div>
+                    <div class="row" id="products">
+                    </div>
+                </div>
+                <div class="col-md-4 offset-md-1" id="coin-container">
+                    <h3>
+                        <button type="button" class="btn btn-outline-success" onClick="getCoins()">
+                            <i class="glyphicon glyphicon-refresh"></i>
+                        </button>
+                        Insert Coins
+                    </h3>
+                    <div class="spinner-border" role="status" id="coins-spinner">
+                        <span class="sr-only"></span>
+                    </div>
+                    <div class="row" id="coins">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="product-choice">
+                <div class="col-md-7">
+                    <div class="row">
+                        <h2 id="product-chosen"></h2>
+                    </div>
+                    <div class="row">
+                        <h2 id="product-price"></h2>
+                    </div>
+                </div>
+                <div class="col-md-4 offset-md-1">
+                    <div class="row">
+                        <h2 id="money-added"></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button class="col-md-12 btn btn-primary" onclick="purchase()">
+                    Purchase
+                </button>
+            </div>
+            <hr>
+            <div class="row">
+                <h2 id="purchased"></h2>
+            </div>
+            <div class="row">
+                <h2 id="change"></h2>
+            </div>
+        </div>
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

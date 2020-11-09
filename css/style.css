@@ -1,0 +1,39 @@
+#headerRow {
+    text-align: center;
+    margin-top: 2%;
+}
+
+#money-input {
+    margin-left: 25%
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+
+#outer-container {
+    height: 200px;
+}
+
+#products-spinner, #coins-spinner {
+    top: 30%;
+    left: 50%;
+    position: relative;
+}
+
+#coins {
+    text-align: center;
+}
+
+#coin-container h3, #product-container h3 {
+    text-align: center;
+}
+
+#coin-container .card h5 {
+    margin: .5rem 0;
+}
+
+#product-choice {
+    margin-bottom: 10px;
+}
